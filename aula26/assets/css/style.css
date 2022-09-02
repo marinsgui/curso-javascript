@@ -3,6 +3,7 @@
 :root {
     --primary-color: rgb(17, 86, 102);
     --primary-color-darker: rgb(9, 48, 56);
+    --res-color: rgb(31, 187, 31);
 }
 
 * {
@@ -72,10 +73,10 @@ form input:focus {
 }
 
 #resultado p {
-    background-color: var(--primary-color);
+    background-color: var(--res-color);
     display: block;
     color: white;
-    padding: 5px;
+    padding: 10px;
 }
 
 #resultado .erro {
