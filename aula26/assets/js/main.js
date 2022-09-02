@@ -6,16 +6,12 @@ botaoCalcular.addEventListener('click', calcular);
 
 resultado.innerHTML = ''
 
-function isNumeric(value) {
-    return /^\d+$/.test(value);
-}
-
 function calcular() {
-    Number(inputPeso.value);
-    Number(inputAltura.value);
+    const peso = Number(inputPeso.value);
+    const altura = Number(inputAltura.value);
     let calculo;
     
-    calculo = inputPeso.value / (inputAltura.value * inputAltura.value);
+    calculo = peso / (altura * altura);
 
     if (calculo < 18.5) {
         resultado.innerHTML = `<p>O seu IMC é: ${calculo.toFixed(2)} (Abaixo do peso)</p>`
@@ -29,9 +25,9 @@ function calcular() {
         resultado.innerHTML = `<p>O seu IMC é: ${calculo.toFixed(2)} (Obesidade grau 2)</p>`
     } else if (calculo > 40) {
         resultado.innerHTML = `<p>O seu IMC é: ${calculo.toFixed(2)} (Obesidade grau 3)</p>`
-    } else if (!isNumeric(inputPeso.value)) {
+    } else if (!peso) {
         resultado.innerHTML = `<p class="erro">Peso inválido!</p>`
-    } else if (!isNumeric(inputAltura.value)) {
+    } else if (!altura) {
         resultado.innerHTML = `<p class="erro">Altura inválida!</p>`
     }
 }
