@@ -23,6 +23,8 @@ function f3(callback) {
        if (callback) callback(); 
     }, rand());
 }
+
+
 f1(f1Callback)
 
 function f1Callback() {
