@@ -7,11 +7,10 @@ module.exports = {
     'plugin:react/recommended',
     'airbnb',
     'prettier',
-    'prettier/react',
   ],
   overrides: [
   ],
-  parser: 'babel-eslint',
+  parser: "@babel/eslint-parser",
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
