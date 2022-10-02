@@ -21,10 +21,10 @@ module.exports = {
     'react-hooks',
   ],
   rules: {
-    'prettier/prettier': 'error',
+    'prettier/prettier': 0,
     'react/jsx-filename-extension': 0,
     'import/prefer-default-export': 0,
-    'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
+    'react-hooks/rules-of-hooks': 0,
+    'react-hooks/exhaustive-deps': 0,
   },
 };

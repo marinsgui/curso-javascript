@@ -1,15 +1,18 @@
 import React from 'react';
-import Login from './pages/Login';
+import { Router } from 'react-router-dom';
+import history from './services/history';
+import Routes from './routes';
+
 import GlobalStyles from './styles/GlobalStyles';
 import Header from './components/Header';
 
 function App() {
   return (
-    <>
-    <Header />
-    <Login />
-    <GlobalStyles />
-    </>
+    <Router history={history}>
+      <Header />
+      <Routes />
+      <GlobalStyles />
+    </Router>
   );
 }
 
