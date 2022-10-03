@@ -4,6 +4,13 @@ import { Container } from '../../styles/GlobalStyles';
 import { Title, Paragrafo } from './styled';
 
 export default function Login() {
+  const dispatch = useDispatch();
+
+  function handleClick(e) {
+    e.preventDefault;
+
+    dispatch();
+  }
   return (
     <Container>
     <Title>Página de Login
@@ -11,7 +18,7 @@ export default function Login() {
     </Title>
 
     <Paragrafo>lorem lorem lorem lorem lorem</Paragrafo>
-    <button type='button'>Enviar</button>
+    <button type='button' onClick={handleClick}>Enviar</button>
     </Container>
   );
 }

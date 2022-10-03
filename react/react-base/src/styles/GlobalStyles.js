@@ -42,6 +42,10 @@ export default createGlobalStyle`
   body .Toastify .Toastify_toast-container .Toastify_toast--success {
     background-color: ${successColor};
   }
+
+  body .Toastify .Toastify_toast-container .Toastify_toast--error {
+    background-color: ${errorColor};
+  }
 `
 
 export const Container = styled.section`
