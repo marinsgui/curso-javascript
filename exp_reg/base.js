@@ -17,7 +17,9 @@ const arquivos = [
     'lista de compras.txt'
 ]
 
-const html = '<p>Olá, mundo!</p> <p>Olá de novo!</p>';
+const html = '<p>Olá, mundo!</p> <p>Olá de novo!</p> <div>Eu sou a div</div>';
+
+const html2 = `<p>Olá, mundo!</p> <div>Eu sou a div</div>`;
 
 const alfabeto = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz @¡ 0123456789 ¡';
 
@@ -40,6 +42,7 @@ module.exports = {
     texto, 
     arquivos, 
     html,
+    html2,
     alfabeto,
     cpfs,
     cpfs2,
